@@ -1,7 +1,7 @@
   	<nav class="navbar navbar-findcond navbar-fixed-top" style="background: #2d3246; marg">
     <div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#" style="color: white;">MITLA</a>
+			<a class="navbar-brand" href="http://localhost/mitla_practice/" style="color: white;">MITLA</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav navbar-right">
