@@ -66,7 +66,7 @@ require_once("app/koneksi.php");
               <?php if (isset($_SESSION['check'])): 
                 $searchkey = $_SESSION['searchkey'];
                 $check_total = $_SESSION['check_total'];
-                $labelid =$_SESSION['labelid'];
+                $labelid = $_SESSION['labelid'];
               ?>
                 
                 <table class="table table-stripped table-bordered">
@@ -122,89 +122,6 @@ require_once("app/koneksi.php");
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/validator.js"></script>
-
-    <script type="text/javascript">
-    document.getElementById('jobc').addEventListener('change', function () {
-       if (this.value == 'A') {
-          document.getElementById("role").disabled = false;
-          document.getElementById("role").required = true;
-       }else{
-          document.getElementById("role").disabled = true;
-          document.getElementById("role").value = null;
-          document.getElementById("role").required = false;
-          document.getElementById("doctorc").disabled = true;
-          document.getElementById("doctorc").value = null;
-          document.getElementById("doctorc").required = false;
-       }
-    });
-
-    document.getElementById('role').addEventListener('change', function () {
-       if (this.value == 'A1') {
-          document.getElementById("doctorc").disabled = false;
-          document.getElementById("doctorc").required = true;
-       }else{
-          document.getElementById("doctorc").disabled = true;
-          document.getElementById("doctorc").value = null;
-          document.getElementById("doctorc").required = false;
-       }
-    });
-
-    document.getElementById('opass').addEventListener('change', function () {
-       if (this.value != null) {
-          document.getElementById("opass").required = true;
-          document.getElementById("npass").required = true;
-          document.getElementById("rnpass").required = true;
-       }else{
-          document.getElementById("opass").required = false;
-          document.getElementById("npass").required = false;
-          document.getElementById("rnpass").required = false;
-       }
-    });
-
-    document.getElementById('npass').addEventListener('change', function () {
-       if (this.value != null) {
-          document.getElementById("opass").required = true;
-          document.getElementById("npass").required = true;
-          document.getElementById("rnpass").required = true;
-       }else{
-          document.getElementById("opass").required = false;
-          document.getElementById("npass").required = false;
-          document.getElementById("rnpass").required = false;
-       }
-    });
-
-    document.getElementById('rnpass').addEventListener('change', function () {
-       if (this.value != null) {
-          document.getElementById("opass").required = true;
-          document.getElementById("npass").required = true;
-          document.getElementById("rnpass").required = true;
-       }else{
-          document.getElementById("opass").required = false;
-          document.getElementById("npass").required = false;
-          document.getElementById("rnpass").required = false;
-       }
-    });      
-
-    </script>
-
-    <script type="text/javascript">
-      $('#opass, #npass').on('keyup', function () {
-        if ($('#opass').val() == $('#npass').val()) {
-          $('#message').html('Password Must Different with Old Password').css('color', 'red');
-        } else 
-          $('#message').html('');
-      });
-    </script>
-
-    <?php if (isset($_SESSION['check'])): ?>
-      <script type="text/javascript">
-           $(window).load(function(){
-               $('#myModal').modal('show');
-            });
-      </script> 
-    <?php
-    unset($_SESSION['check']);
-    endif ?>
     
   </body>
 </html>
