@@ -24,7 +24,7 @@ session_start();
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <div class="login-panel panel panel-default">
-            <div class="panel-heading">Search Film</div>
+            <div class="panel-heading">Main Menu</div>
             <div class="panel-body">
               <hr>
               <a href="login.php" class="btn btn-primary form-control">Login</a>
