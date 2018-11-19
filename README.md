@@ -6,18 +6,36 @@ When you're done, you can delete the content in this README and update the file 
 
 ---
 
-## Edit a file
+## PUSH Code to Bitbucket
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Work on a repository
+Push code to Bitbucket
+Pull code from Bitbucket
+Create an issue
+Create or edit a wiki page
+Still need help?
+The Atlassian Community is here for you.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Ask the community
 
----
+To get your code changes into Bitbucket, you work on them locally before you add, commit, and push them to Bitbucket.
+
+Push changes to a Git repository
+Create your new files or edit existing files in your local project directory.
+From the command line, enter cd <path_to_local_repo> so that you can enter commands for your repository.
+Enter git add --all at the command line to add the files or changes to the repository.
+
+Enter git commit -m '<commit_message>' at the command line to commit new files/changes to the local repository. For the <commit_message> , you can enter anything that describes the changes you are committing.
+Enter git push  at the command line to copy your files from your local repository to Bitbucket.
+If prompted for authentication, enter your Bitbucket password.
+Push changes to a Mercurial repository
+Create your new files or edit existing files in your local project directory.
+From the command line, enter cd <path_to_local_repo> so that you can enter commands for your repository.
+If you created a new file as part of your changes, enter hg add at the command line to add the file to the repository. If you didn't create any new files, continue to the next step.
+
+Enter hg commit -m '<commit_message>' at the command line to commit new files/changes to the local repository. For the <commit_message>, you can enter anything that describes the changes you are committing.
+Enter hg push at the command line to copy your files from your local repository to Bitbucket.
+If prompted for authentication, enter your Bitbucket password.
 
 ## Create a file
 
